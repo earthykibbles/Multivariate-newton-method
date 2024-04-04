@@ -127,10 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MultiVarNewton.cpp" />
+    <ClCompile Include="hessian\hessian.cpp" />
+    <ClCompile Include="jacobian\jacobian.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="partial\partial.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hessian\hessian.h" />
+    <ClInclude Include="jacobian\jacobian.h" />
+    <ClInclude Include="partial\partial.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
